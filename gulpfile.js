@@ -46,7 +46,8 @@ $.gulp.task('build',
           'copy:images',
           'copy:video',
           'scss',
-          'scripts'
+          'scripts',
+          'server'
       )
   )
 )

@@ -1,0 +1,9 @@
+.scroll-down {
+  align-self: center;
+  transition: .2s;
+
+  &__img {
+    width: rem(29px);
+    height: rem(14px);
+  }
+}

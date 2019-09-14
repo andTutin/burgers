@@ -1,0 +1,39 @@
+.ingredients {
+  position: absolute;
+  padding: rem(15px);
+  top: 0;
+  left: rem(-999999px);
+  width: rem(270px);
+  height: rem(332px);
+  border-radius: 5px;
+  background-color: #ffffff;
+  opacity: .91;
+
+  &__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    color: #2f3234;
+
+    &-img {
+      width: rem(40px);
+      height: rem(40px);
+    }
+
+    &-text {
+      margin-left: rem(25px);
+    }
+
+    &-mass {
+      margin-left: auto;
+      font-weight: 300;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+.menu-card {
+  height: 100%;
+  display: flex;
+  
+  
+
+  &__trigger {
+    width: rem(80px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-top: rem(40px);
+    padding-bottom: rem(40px);
+
+
+    &--meat {
+      background-image: url('../img/menu-screen/meat.png');
+      background-size: cover;
+    }
+  
+    &--vegan {
+      background-image: url('../img/menu-screen/vegan.png');
+      background-size: cover;
+    }
+  
+    &--diet {
+      background-image: url('../img/menu-screen/diet.png');
+      background-size: cover;
+    }
+
+    @include tablets {
+      width: rem(80px);
+    }
+    
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #2f3234;
+      opacity: 0.5;
+    }
+  }
+
+  &__title {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: 'Gagalin';
+    font-size: rem(40px);
+    font-weight: 400;
+    z-index: 1;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(#2f3234, 0.93);
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__text p {
+    color: #fff;
+    font-weight: 300;
+    line-height: rem(24px);
+    width: 0;
+    opacity: 0;
+  }
+
+  &--active {
+    flex-grow: 1;
+
+    @include phones {
+      order: -3;
+    }
+  }
+
+  &--active &__text {
+    flex: 1;
+    padding: rem(40px);
+
+
+    @include tablets {
+      flex: 1;
+    }
+
+    @include phones {
+      position: absolute;
+      right: 0;
+      left: 80px;
+      height: 100%;
+      z-index: 10;
+    }
+  }
+
+  &--active &__text p { 
+    display: block;
+    width: 100%;
+    opacity: 1;
+    transition: opacity .3s .1s;
+  }
+
+  &--active &__title {
+    color: #f9b43b;
+  }
+}
+
+
+/*
+.menu-card:hover {
+  flex: 1;
+
+  @include phones {
+    order: -3;
+  }
+}
+
+.menu-card:hover > .menu-card__text {
+  flex: 1;
+  padding: rem(62px) rem(35px);
+
+  @include phones {
+    position: absolute;
+    right: 0;
+    left: 80px;
+    height: 100%;
+    z-index: 10;
+  }
+}
+
+.menu-card:hover > .menu-card__text p {
+  display: block;
+  width: 100%;
+  opacity: 1;
+  transition-property: opacity 1s;
+  transition-delay: .3s;
+
+  
+}
+
+.menu-card:hover .menu-card__title {
+  color: #f9b43b;
+}
+
+*/
+
+

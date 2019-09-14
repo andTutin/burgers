@@ -1,0 +1,36 @@
+.close {
+  cursor: pointer;
+
+  @include tablets {
+    display: none;
+    position: absolute;
+    top: rem(30px); 
+    right: rem(8px);
+    width: rem(30px);
+    height: rem(30px);
+    transform: rotate(45deg);
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0; 
+      right: 0;
+      height: rem(4px);
+      transform: translateY(-50%);
+      background: #fff;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: rem(4px);
+      transform: translateX(-50%);
+      background: #fff;
+    }
+  }
+}
+

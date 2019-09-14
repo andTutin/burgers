@@ -1,0 +1,13 @@
+.menu-accordeon {
+  position: absolute;
+  left: calc(100% - 780px);
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  @include tablets {
+    left: 0;
+    position: relative;
+  }
+}

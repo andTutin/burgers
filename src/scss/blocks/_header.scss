@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablets {
+    margin-right: rem(58px);
+  }
+
+  @include phones {
+    margin-right: rem(55px);
+  }
+}

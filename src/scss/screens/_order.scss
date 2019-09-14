@@ -1,0 +1,43 @@
+.order {
+  background-image: url('../img/order-screen/texture.png');
+  background-size: cover;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../img/order-screen/bg.png');
+    background-size: cover;
+    z-index: 10;
+  }
+
+  &__container {
+    justify-content: center;
+    align-items: center;
+
+    @include tablets {
+      max-width: rem(670px);
+    }
+
+    @include phones {
+      max-width: rem(460px);
+    }
+  }
+
+  .title {
+    z-index: 10;
+
+    @include tablets {
+      text-align: center;
+    }
+
+    @include phones {
+      font-size: rem(50px);
+    }
+  }
+}

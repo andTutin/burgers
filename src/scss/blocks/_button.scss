@@ -1,0 +1,41 @@
+.button {
+  padding: rem(13px) rem(15px);
+  border-radius: 6px;
+  font-size: rem(13px);
+  text-transform: uppercase;
+  transition: 0.3s;
+
+  &--bg-red {
+    background-color: $red;
+
+    &:hover {
+      background-color: darken($red, 10%);
+    }
+  }
+
+  &--bg-black {
+    background-color: $black;
+
+    &:hover {
+      background-color: #1f2122;
+    }
+
+    @include phones {
+      display: none;
+    }
+  }
+
+  &--reset {
+    font-weight: 300;
+    text-transform: initial;
+    outline: none;
+  }
+
+  &--reviews-mobile {
+    display: none;
+
+    @include phones {
+      display: block;
+    }
+  }
+}

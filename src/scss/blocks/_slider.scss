@@ -1,0 +1,62 @@
+.slider {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  position: relative;
+
+  &__prev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include phones {
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+  }
+
+  &__prev-trigger {
+    display: block;
+  }
+
+  &__prev-image {
+    width: rem(27px);
+    height: rem(13px);
+    transform: rotate(90deg);
+  }
+  
+  &__window {
+    display: flex;
+    overflow: hidden;
+  }
+
+  &__list {
+    display: flex;
+    position: relative;
+    transition: .3s;
+  }
+
+  &__next {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include phones {
+      position: absolute;
+      top: 50%;
+      right: 0;
+    }
+  }
+
+  &__next-trigger {
+    display: block;
+  }
+
+  &__next-image {
+    width: rem(27px);
+    height: rem(13px);
+    transform: rotate(-90deg);
+  }
+}
+

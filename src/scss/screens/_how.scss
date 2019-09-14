@@ -1,0 +1,16 @@
+.how {
+  background: url(../img/how-screen/BG_.png) center center / cover no-repeat;
+
+  &__container {
+    justify-content: center;
+    align-items: center;
+
+    @include tablets {
+      max-width: rem(741px);
+    }
+
+    @include phones {
+      max-width: rem(441px);
+    }
+  }
+}

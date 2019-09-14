@@ -1,0 +1,24 @@
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__list {
+    margin-top: rem(43px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include tablets {
+      margin-top: rem(44px);
+    }
+
+    @include phones {
+      margin-top: rem(44px);
+      flex-direction: column;
+    }
+  }
+}
+

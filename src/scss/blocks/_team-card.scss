@@ -1,0 +1,128 @@
+.team-card {
+  width: 100%;
+  margin-bottom: rem(34px);
+  display: flex;
+  flex-direction: column;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include tablets {
+    margin-bottom: rem(31px);
+  }
+
+  &__trigger {
+
+    @include tablets {
+      text-align: center;
+    }
+  }
+
+  &__link {
+    font-family: 'Gagalin';
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    transition: .4s;
+
+    @include tablets {
+      font-size: rem(24px);
+      justify-content: center;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      margin-right: rem(10px);
+      border: rem(5px) solid transparent;	
+      border-top: rem(5px) solid #f9b43b;
+      border-bottom: 0;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: flex-start;
+    height: 0;
+    overflow: hidden;
+    padding-left: rem(18px);
+    width: 100%;
+    transition: .4s;
+
+    @include tablets {
+      padding-left: 0;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__pic {
+    width: rem(100px);
+    height: rem(100px);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__avatar {
+    height: 100%;
+    width: 100px;
+  }
+
+  &__desc {
+    margin-left: rem(22px);
+    width: rem(208px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    @include tablets {
+      margin-left: 0;
+      justify-content: flex-start;
+      width: 100%;
+      margin-top: rem(20px);
+      text-align: center;
+    }
+  }
+
+  &__job {
+    font-weight: 700;
+  }
+
+  &__text {
+    margin-top: rem(14px);
+    font-weight: 300;
+    line-height: rem(24.01px);
+
+    @include tablets {
+      margin-top: rem(13px);
+    }
+  }
+
+  &--active &__link {
+    color: #f9b43b;
+    
+    
+
+  }
+
+  &--active &__info {
+    height: rem(108px);
+    margin-top: rem(15px);
+
+    @include tablets {
+      margin-top: rem(15px);
+      height: rem(196px);
+    }
+  }
+
+  &--active  &__link:before {
+    content: "";
+    display: block;
+    margin-right: rem(10px);
+    border: rem(5px) solid transparent;	
+    border-bottom: rem(5px) solid #f9b43b;
+    border-top: 0;
+  }
+}

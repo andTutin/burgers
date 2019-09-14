@@ -1,16 +1,24 @@
 .video {
-  width: 660px;
-  height: 370px;
+  margin-top: rem(50px);
+  width: rem(660px);
+  height: rem(370px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+
+  @include phones {
+    width: 95%;
+    max-width: rem(460px);
+    height: rem(254px);
+  }
 
   &__display {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
   }
 
   &__controlls {
@@ -19,7 +27,7 @@
     left: 0;
     width: 100%;
     background-color: #3e3e3e;
-    padding: 10px 20px;
+    padding: rem(10px) rem(20px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,37 +36,37 @@
       &-play {
         display: block;
         fill: #626262;
-        width: 16px;
-        height: 22px;
+        width: rem(16px);
+        height: rem(22px);
       }
 
       &-pause {
         display: none;
         fill: #626262;
-        width: 16px;
-        height: 22px;
+        width: rem(16px);
+        height: rem(22px);
       }
     }
 
     &-bar {
-      height: 4px;
+      height: rem(4px);
       border-radius: 1px;
       background-color: #626262;
       cursor: pointer;
 
       &--progress {
-        width: 444px;
+        width: rem(444px);
       }
 
       &--volume {
-        width: 58px;
+        width: rem(58px);
       }
     }
 
     &-circle {
       position: relative;
-      width: 13px;
-      height: 13px;
+      width: rem(13px);
+      height: rem(13px);
       background-color: #626262;
       border-radius: 50%;
       top: 50%;
@@ -71,8 +79,8 @@
 
       &-img {
         fill: #626262;
-        width: 18px;
-        height: 22px;
+        width: rem(18px);
+        height: rem(22px);
       }
 
       
@@ -89,8 +97,8 @@
 
     &-img {
       fill: #fff;
-      width: 82px;
-      height: 118px;
+      width: rem(82px);
+      height: rem(118px);
     }
   }
 }

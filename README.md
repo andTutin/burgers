@@ -1,7 +1,9 @@
 -----------------------------------------------------
-Tutin Andrei
+Тутин Андрей
 
-How to install and build my app
+Выпускной проект курса "Веб для начинающих" школы онлайн образования Loftschool
+
+Кау установить и запустить проект на своей локальной машине / How to install and build my app
 
 1. git clone https://github.com/andTutin/burgers
 2. cd burgers

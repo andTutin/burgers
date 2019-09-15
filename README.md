@@ -17,16 +17,4 @@ https://andtutin.github.io/burgers/dist/
 
 Автор: Тутин Андрей.
 
-
-> Как установить и запустить проект на своей локальной машине
-
-
-
-    1. git clone https://github.com/andTutin/burgers
- 
-    2. cd burgers
-     
-    3. npm i
-     
-    4. npm run build
 -----------------------------------------------------

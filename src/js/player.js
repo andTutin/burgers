@@ -84,7 +84,7 @@
       video.volume = currentVolume;
       this.style.fill = '';
     } else {
-      this.classList.add('muted')
+      this.classList.add('muted');
       video.volume = 0;
     }
   })
@@ -94,6 +94,11 @@
     let clickPosition = e.offsetX;
     circleVolume.style.left = (100 * clickPosition / barWidth) + '%';
     currentVolume = clickPosition / barWidth;
+    video.volume = currentVolume;
+    if (volumeBtn.classList.contains('muted')) {
+      volumeBtn.classList.remove('muted');
+    }
+
   })
 })()
 

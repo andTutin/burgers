@@ -147,6 +147,16 @@
     }
   }
 
+  &__title--nyc {
+    color: #ffffff;
+    font-family: Gagalin;
+    font-size: 72px;
+    font-weight: 400;
+    @include phones {
+      font-size: rem(42px);
+    }
+  }
+
   &__text {
     margin-top: rem(41px);
     line-height: rem(24px);

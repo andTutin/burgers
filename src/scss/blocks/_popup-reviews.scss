@@ -20,6 +20,17 @@
     font-weight: 300;
     line-height: rem(24px);
     position: relative;
+
+    @include tablets {
+      width: rem(473px);
+    }
+
+    @include phones {
+      max-width: rem(460px);
+      width: 95%;
+    }
+
+
   }
 
   &__title {

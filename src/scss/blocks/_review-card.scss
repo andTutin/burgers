@@ -18,6 +18,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    z-index: -5;
     
 
     @include tablets {
@@ -26,24 +27,23 @@
   }
 
   &__desc {
-    position: absolute;
-    left: -100vw;
-    top: 0;
-    opacity: 0;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(#000, .5);
+    
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 
     @include tablets {
       align-items: center;
-      width: rem(275px);
     }
 
     @include phones {
-      width: rem(128px);
       
       article {
         height: 0;
@@ -51,14 +51,15 @@
       }
     }
   }
-  
+
   &:hover &__desc {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    transition: opacity .5s;
+    background: rgba(#000, .5);
+    transition: .5s;
+  }
+  
+  &:hover &__content {
+    z-index: 5;
+    transition: z-index .5s;
   }
 
   &__costumer {

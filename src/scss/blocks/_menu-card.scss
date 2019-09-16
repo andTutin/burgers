@@ -1,8 +1,6 @@
 .menu-card {
   height: 100%;
   display: flex;
-  
-  
 
   &__trigger {
     width: rem(80px);
@@ -15,22 +13,6 @@
     position: relative;
     padding-top: rem(40px);
     padding-bottom: rem(40px);
-
-
-    &--meat {
-      background-image: url('../img/menu-screen/meat.png');
-      background-size: cover;
-    }
-  
-    &--vegan {
-      background-image: url('../img/menu-screen/vegan.png');
-      background-size: cover;
-    }
-  
-    &--diet {
-      background-image: url('../img/menu-screen/diet.png');
-      background-size: cover;
-    }
 
     @include tablets {
       width: rem(80px);

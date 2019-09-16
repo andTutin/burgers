@@ -1,20 +1,8 @@
 .start {
-  background: url(../img/first-screen/bg.png) center center / cover no-repeat;
+  background: url(../img/first-screen/texture.png) center center / cover no-repeat;
   padding-top: rem(12px);
   padding-bottom: rem(40px);
   position: relative;
-  z-index: 10;
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: url(../img/first-screen/texture.png) center center / cover no-repeat;
-    z-index: -10;
-  }
 
   &__container {
     justify-content: space-between;
@@ -27,4 +15,13 @@
       max-width: rem(441px);
     }
   }
+}
+
+.bgvideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }

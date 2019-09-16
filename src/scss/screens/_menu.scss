@@ -2,7 +2,7 @@
   background: url(../img/menu-screen/menu.png) center center / cover no-repeat;
   position: relative;
 
-  &__title {
+  .title {
     position: absolute;
     top: rem(111px);
     left: rem(102px);
@@ -12,9 +12,10 @@
       left: rem(24px);
     }
 
-    @include tablets {
+    @include phones{
       top: rem(59px);
-      left: rem(60px);
+      left: rem(10px);
+      font-size: rem(42px);
     }
   }
 }

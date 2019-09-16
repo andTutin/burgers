@@ -1,5 +1,6 @@
 .team-accordeon {
   width: rem(347px);
+  height: rem(300px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -8,6 +9,8 @@
   @include tablets {
     align-items: center;
     justify-content: flex-start;
+    height: rem(410px);
+
   }
 
   @include phones {

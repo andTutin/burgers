@@ -1,6 +1,6 @@
 .team-card {
   width: 100%;
-  margin-bottom: rem(34px);
+  margin-bottom: rem(19px);
   display: flex;
   flex-direction: column;
 
@@ -42,14 +42,26 @@
     }
   }
 
+  &__content {
+    width: 100%;
+    height: 0;
+    transition: .4s;
+    overflow: hidden;
+    margin-top: rem(19px);
+  }
+
   &__info {
     display: flex;
     justify-content: flex-start;
-    height: 0;
-    overflow: hidden;
     padding-left: rem(18px);
     width: 100%;
     transition: .4s;
+    height: rem(108px);
+
+    @include tablets {
+      margin-top: rem(15px);
+      height: rem(196px);
+    }
 
     @include tablets {
       padding-left: 0;
@@ -102,18 +114,13 @@
 
   &--active &__link {
     color: #f9b43b;
-    
-    
-
   }
 
-  &--active &__info {
+  &--active &__content {
     height: rem(108px);
-    margin-top: rem(15px);
 
     @include tablets {
-      margin-top: rem(15px);
-      height: rem(196px);
+      height: 13.75rem;
     }
   }
 

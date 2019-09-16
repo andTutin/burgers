@@ -6,6 +6,7 @@
   var revClose = document.querySelector('.popup-reviews__close');
   revClose.addEventListener('click', function(e) {
     e.preventDefault();
+    inscroll = false;
     modalRev.style.display = 'none';
     document.body.style.overflow = 'initial';
   });
@@ -14,6 +15,7 @@
     e.preventDefault();
     var target = e.target.closest('button');
     if (!target) return;
+    inscroll = true;
       modalRev.style.display = 'flex';
       document.body.style.overflow = 'hidden';
       modalTitle.style.display  = 'block';

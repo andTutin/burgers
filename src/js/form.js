@@ -20,6 +20,7 @@
       xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
       xhr.send(data);
       xhr.addEventListener('load', () => {
+        inscroll = true;
         popupForm.style.display = 'flex';
         document.body.style.overflow = 'hidden';
         popupText.innerText = xhr.response.message;
@@ -31,6 +32,7 @@
   });
 
   popupClose.addEventListener('click', function(e) {
+    inscroll = false;
     e.preventDefault();
     popupForm.style.display = '';
     document.body.style.overflow = '';

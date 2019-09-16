@@ -5,6 +5,7 @@
   var close = document.querySelector('.close');
       
   hamburger.addEventListener('click', function(event) {
+    inscroll = true;
     event.preventDefault();
     hamburger.style.display = 'none';
     fullscreenMenu.style.display = 'flex';
@@ -15,6 +16,7 @@
         fullscreenMenu.style.display = '';
         hamburger.style.display = '';
         document.body.style.overflow = 'initial';
+        inscroll = false;
       });
     });
 
@@ -23,6 +25,7 @@
         hamburger.style.display = '';
         fullscreenMenu.style.display = 'none';
         document.body.style.overflow = 'initial';
+        inscroll = false;
       });
     };
 })()

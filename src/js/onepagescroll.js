@@ -1,7 +1,8 @@
-;(function() {
+; 
+var inscroll = false;
+(function() {
   const sections = $(".screen");
   const display = $(".page");
-  let inscroll = false;
 
   const mobileDetect = new MobileDetect(window.navigator.userAgent);
   const isMobile = mobileDetect.mobile();

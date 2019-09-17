@@ -8,12 +8,12 @@ https://andtutin.github.io/burgers/dist/
  - Адаптивная вёрстка
  - Препроцессор SASS
  - SVG
- - Асинхронные сетевые запросы
+ - Асинхронные сетевые запросы AJAX
  - Npm, Gulp
- - Смена секций по принципу One Page Scroll
- - Yandex Maps API, HTML5 API
+ - Механика смены секций - One Page Scroll
+ - Yandex Maps API, HTML 5 API
 
-Интерактивные элементы страницы написаны на нативном JavaScript, часть из них с применением библиотеки JQuery.
+Интерактивные элементы страницы написаны на JavaScript, часть из них с применением библиотеки JQuery.
 
 Автор: Тутин Андрей.
 
